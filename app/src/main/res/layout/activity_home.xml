@@ -7,13 +7,40 @@
     tools:context=".HomeActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="16dp"
+        android:text="Esto es un texto!"
+        app:layout_constraintBottom_toTopOf="@+id/apretame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/apretame"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:drawableStart="@drawable/ic_action_name"
+        android:duplicateParentState="false"
+        android:text="Apretame"
+        android:textAlignment="center"
+        android:onClick="mensaje"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="180dp"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
