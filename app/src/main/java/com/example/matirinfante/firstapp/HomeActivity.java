@@ -10,13 +10,14 @@ import android.widget.TextView;
 public class HomeActivity extends AppCompatActivity {
 
     private static final String TAG = HomeActivity.class.getSimpleName();
-    TextView textoContador = (TextView) findViewById(R.id.contador);
+    TextView textoContador;
     int i = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Log.d(TAG, "Creando el URI...");
+        textoContador = findViewById(R.id.contador);
     }
 
     public void mensaje(View v){
