@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Primera Prueba en Android</string>
+    <string name="bienvenida">Bienvenido!</string>
+    <string name="mensajeBienvenida">Estas usando una app creada con codigo nativo Android. Probala!</string>
 </resources>
